@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Kerala</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning bgcl">
+            <img src="./pics/official-app.png" alt="kerala-logo" width="50px" height="45px" overflow="hidden" margin-left="1em">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="districts.html">Districts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active"  href="signin.html">Sign Up</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="login.html">Login</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <img class="green" src="./pics/kerala-tourism-title.png" alt="kerala-logo">
+          </nav>
+    </div>
+
+    <div class="loginid">
+        <form class="row g-12" action="#" onsubmit="return signupvalid()">
+            <div class="col-md-12">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail" onkeyup="return mailvalid()">
+              <div id="errormail"></div>
+            </div>
+            <br>
+            <div class="col-md-12">
+                <label for="inputEmail" class="form-label">Phone Number</label>
+                <input type="number" class="form-control" id="inputNumber" onkeyup="phonevalid()">
+                <div id="errorphone"></div>
+           </div>
+              <br>
+            <div id="errorno"></div>
+            <div class="col-12">
+                <label for="inputPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword" onkeyup="return passstrenght()" >
+                <div id="strenght"></div>
+            </div>
+           <br>
+           <div class="col-12">
+            <label for="inputPassword2" class="form-label">Re Enter Password</label>
+            <input type="password" class="form-control" id="inputPassword2" onkeyup="return checkpass()">
+            <div id=errorpass></div>
+          </div>
+            <li> 
+                Minimum 8 characters
+            </li>
+            <li>
+                Atleast one uppercase
+             </li>
+             <li>
+                Atleast one lowercase
+             </li>
+             <li>
+                Atleast one number
+            </li>
+            
+           
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+          </form>
+    </div>
+    <script src="signin.js"></script>
+    <footer>Copyright@www.keralatourism.gov.in</footer>
+    </body>
+    </html>

@@ -1,0 +1,58 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url(./pics/light_green_solid_color_65835_300x168.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+    
+}
+
+.bgcl{
+    opacity: 0.8;
+}
+.navbar-brand{
+      
+       margin-left: 100px;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       text-decoration: solid black;
+       
+    
+}
+
+
+.green{
+    margin-right: 2%;
+    height: 55px;
+    width: 350px;
+}
+
+.card {
+  
+    width: 60vh;
+    margin: 2%;
+    padding: 2%
+}
+
+footer{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+
+}
+
+h1{
+    text-align: center;
+    padding-top: 1em;
+    color: blanchedalmond;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serifs;
+}
+
+.card img{
+    object-fit: cover;
+    
+}
